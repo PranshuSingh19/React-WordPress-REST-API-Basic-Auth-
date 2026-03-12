@@ -81,7 +81,7 @@ const response = await fetch(
 
     headers: {
       // Basic Authentication
-      "Authorization": "Basic " + btoa("user:password"),
+      "Authorization": "Basic " + btoa("user:password"), //  "Basic " space required hay ///
 
       // File name send karna required hota hai
       "Content-Disposition": `attachment; filename="${featuredMediaFile.name}"`,
